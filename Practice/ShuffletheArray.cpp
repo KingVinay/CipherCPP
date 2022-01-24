@@ -1,0 +1,19 @@
+// Leetcode - 1470. Shuffle the Array
+
+vector<int> shuffle(vector<int>& nums, int n) {
+        
+        vector <int> ans;
+        
+        int i=0,j=n;
+        for(int k=0;k<2*n;k++){
+          if(k%2==0)
+          ans.push_back(nums[i++]);
+        
+           else{
+            ans.push_back(nums[j++]);}
+            
+            
+            }
+        return ans;
+        
+    }
